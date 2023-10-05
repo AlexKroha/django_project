@@ -3,10 +3,10 @@ from django.db import models
 
 # Create your models here.
 
-class Post(models.Model):  # new
-    text = models.TextField()
+class Product(models.Model):  # new
+    title = models.CharField(max_length=50)
 
     def __str__(self):  # new
-        return self.text[:50]
+        return self.title
 
 

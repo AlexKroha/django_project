@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Post
+from .models import Product
 
-@admin.register(Post)
-class PostAdmin(admin.ModelAdmin):
-    list_display = ['text']
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['title']
